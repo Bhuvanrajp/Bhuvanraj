@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f7fa;
+}
+
+header {
+    background: #1a3c5e;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#hero {
+    background: linear-gradient(135deg, #00bcd4, #1a3c5e);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+#hero h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #1a3c5e;
+}
+
+.project-grid, .certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card, .certificate-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover, .certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3, .certificate-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1a3c5e;
+}
+
+.project-card p, .certificate-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: inline-block;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #1a3c5e;
+    text-decoration: underline;
+}
+
+.contact-links {
+    text-align: center;
+}
+
+.contact-links a {
+    margin: 0 15px;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color: #1a3c5e;
+    text-decoration: underline;
+}
+
+footer {
+    background: #1a3c5e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero p {
+        font-size: 1.1rem;
+    }
+
+    .project-grid, .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+}
